@@ -1,5 +1,4 @@
 /.gradle/
 /.idea/
-/day1/build/
-/day2/build/
-/utils/build/
+/*/build/
+/build/

@@ -1,5 +1,7 @@
 package org.example;
 
+import dof.aoc.util.AoCReader;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -21,7 +23,7 @@ public class Main {
         System.out.println("Hello AOC 2022 - Day 2");
 
 
-        try (BufferedReader br = new BufferedReader(new InputStreamReader(ReadFile.readFileAsStream("gameInput.txt")))) {
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(AoCReader.readFileAsStream("gameInput.txt")))) {
             String line;
             while ((line = br.readLine()) != null) {
                 executeRound(line);
