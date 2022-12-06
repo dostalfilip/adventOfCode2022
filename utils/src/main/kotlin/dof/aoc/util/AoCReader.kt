@@ -14,6 +14,9 @@ class AoCReader {
             File(ClassLoader.getSystemResource(filename).file).readLines()
 
         @JvmStatic @NotNull fun checkReader(@NotNull checkInput: String) = checkInput.split("\n");
+
+        @JvmStatic @NotNull fun readFileAsText(@NotNull filename: String) =
+            File(ClassLoader.getSystemResource(filename).file).readText()
     }
 }
 
